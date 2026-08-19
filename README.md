@@ -24,14 +24,4 @@
 * **Autonomous Multi-Agent SOC Pipeline**: Coordinated AI agent pipeline performing automated telemetry triage, MITRE ATT&CK causal graph reconstruction, and blast-radius impact analysis.
 * **Human-in-the-Loop (HITL) Containment Gate**: Operator call-sign authorization checkpoint requiring explicit analyst sign-off before executing active network containment countermeasures, eliminating automated false-positive outages.
 
----
 
-## 🏗️ Architecture & Tech Stack
-
-```mermaid
-graph LR
-    Telemetry[Network Telemetry Ingestion] --> ML[Isolation Forest Anomaly Detection]
-    ML --> Agents[Autonomous SOC Multi-Agent Crew]
-    Agents --> Timeline[MITRE ATT&CK Causal Mapping]
-    Timeline --> HITL[HITL Operator Authorization Gate]
-    HITL --> Response[Active Incident Containment]
