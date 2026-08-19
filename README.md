@@ -1,39 +1,37 @@
-﻿# SentinelAI-X: Autonomous AI SOC Multi-Agent Detection & Response Engine
+<div align="center">
 
-SentinelAI-X is an autonomous Security Operations Center (SOC) platform designed for real-time threat telemetry ingestion, unsupervised ML anomaly detection, causal MITRE ATT&CK timeline reconstruction, and human-authorized incident containment.
+# 🛡️ SentinelAI-X
+### Autonomous AI SOC Multi-Agent Detection & Response Engine
 
-## Key Features
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://sentinel-ai-x-chi.vercel.app)
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-* **Procedural MITRE Campaign Generator**: Simulates realistic multi-stage intrusion campaigns (Active Scanning -> Exploit -> Lateral Movement -> Exfiltration) buried under background enterprise noise.
-* **Isolation Forest Anomaly Scoring**: Fast unsupervised machine learning detection layer filtering benign network traffic.
-* **Autonomous Multi-Agent Crew**: Coordinated pipeline performing automated triage, MITRE ATT&CK causal mapping, and blast-radius assessment.
-* **Human-in-the-Loop (HITL) Containment Gate**: Operator call-sign authorization checkpoint preventing automated false-positive outages.
+**SentinelAI-X** is an autonomous Security Operations Center (SOC) platform designed for real-time network telemetry ingestion, unsupervised ML anomaly detection, causal MITRE ATT&CK timeline reconstruction, and human-in-the-loop incident containment.
 
-## Architecture
+[Explore Live Demo](https://sentinel-ai-x-chi.vercel.app) · [Report Bug](https://github.com/SYEDMAHAMMEDAFZAL/Sentinel-AI-X/issues) · [Request Feature](https://github.com/SYEDMAHAMMEDAFZAL/Sentinel-AI-X/issues)
 
-* **Backend**: FastAPI (Python), Scikit-Learn, Pandas, NumPy, Uvicorn
-* **Frontend**: React (Vite), Tailwind CSS, Lucide React Icons
+</div>
 
-## Local Setup & Run
+---
 
-### 1. Backend Setup
-\\\ash
-cd backend
-python -m venv venv
-# Windows:
-.\venv\Scripts\activate
-# Linux/macOS:
-source venv/bin/activate
+## 📌 Key Features
 
-pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8000
-\\\
+* **Procedural MITRE Campaign Generator**: Simulates realistic, multi-stage cyber intrusion campaigns (`Reconnaissance` $\rightarrow$ `Exploitation` $\rightarrow$ `Lateral Movement` $\rightarrow$ `Data Exfiltration`) injected dynamically amidst high-volume background enterprise traffic.
+* **Isolation Forest Anomaly Detection**: Lightweight, unsupervised machine learning scoring layer filtering high-dimensional benign flows and isolating statistical anomalies in real time.
+* **Autonomous Multi-Agent SOC Pipeline**: Coordinated AI agent pipeline performing automated telemetry triage, MITRE ATT&CK causal graph reconstruction, and blast-radius impact analysis.
+* **Human-in-the-Loop (HITL) Containment Gate**: Operator call-sign authorization checkpoint requiring explicit analyst sign-off before executing active network containment countermeasures, eliminating automated false-positive outages.
 
-### 2. Frontend Setup
-\\\ash
-cd frontend
-npm install
-npm run dev
-\\\
+---
 
-Access the dashboard at [\http://localhost:5173\.](https://sentinel-ai-x-chi.vercel.app)
+## 🏗️ Architecture & Tech Stack
+
+```mermaid
+graph LR
+    Telemetry[Network Telemetry Ingestion] --> ML[Isolation Forest Anomaly Detection]
+    ML --> Agents[Autonomous SOC Multi-Agent Crew]
+    Agents --> Timeline[MITRE ATT&CK Causal Mapping]
+    Timeline --> HITL[HITL Operator Authorization Gate]
+    HITL --> Response[Active Incident Containment]
