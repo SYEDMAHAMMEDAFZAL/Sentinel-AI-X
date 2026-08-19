@@ -36,4 +36,4 @@ npm install
 npm run dev
 \\\
 
-Access the dashboard at \http://localhost:5173\.
+Access the dashboard at [\http://localhost:5173\.](https://sentinel-ai-x-chi.vercel.app)
